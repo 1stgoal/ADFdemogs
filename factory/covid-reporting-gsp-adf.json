@@ -1,0 +1,9 @@
+{
+	"name": "covid-reporting-gsp-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "341115c3-6c94-463b-8866-a3b7640f2fff",
+		"tenantId": "33e77340-bcc6-40c3-93b0-e04405efae3a"
+	}
+}
