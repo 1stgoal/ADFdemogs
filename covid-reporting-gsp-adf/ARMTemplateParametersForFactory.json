@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "covid-reporting-gsp-adf"
+		},
+		"ls_ablob_covidreportingsa_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covidreportingdl_accountKey": {
+			"value": ""
+		},
+		"ds_ecdcs_raw_csv_http_fixed_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"ls_adls_covidreportingdl_properties_typeProperties_url": {
+			"value": "https://covidreportingdlgs.dfs.core.windows.net/"
+		},
+		"ls_http_opendata_github_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		}
+	}
+}
