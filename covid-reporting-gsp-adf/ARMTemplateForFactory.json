@@ -526,7 +526,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"folderPath": "ecdc",
+						"folderPath": "ecdc/hospital_admission_daily",
 						"fileSystem": "processed"
 					},
 					"columnDelimiter": ",",
@@ -554,8 +554,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "hospital_admission_weekly",
-						"folderPath": "ecdc",
+						"folderPath": "ecdc/hospital_admission_weekly",
 						"fileSystem": "processed"
 					},
 					"columnDelimiter": ",",
@@ -1180,18 +1179,16 @@
 						"     skipDuplicateMapOutputs: true) ~> SelectDailyColumns",
 						"SelectWeeklyColumns sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
-						"     partitionFileNames:['hospitalWeekly'],",
 						"     truncate: true,",
-						"     umask: 0000,",
+						"     umask: 0002,",
 						"     preCommands: [],",
 						"     postCommands: [],",
 						"     skipDuplicateMapInputs: true,",
 						"     skipDuplicateMapOutputs: true) ~> WeeklySink",
 						"SelectDailyColumns sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
-						"     partitionFileNames:['hospitalDaily'],",
 						"     truncate: true,",
-						"     umask: 0000,",
+						"     umask: 0022,",
 						"     preCommands: [],",
 						"     postCommands: [],",
 						"     skipDuplicateMapInputs: true,",
