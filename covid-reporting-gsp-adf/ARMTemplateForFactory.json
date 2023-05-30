@@ -1181,21 +1181,21 @@
 						"SelectWeeklyColumns sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     partitionFileNames:['hospitalWeekly'],",
+						"     truncate: true,",
 						"     umask: 0000,",
 						"     preCommands: [],",
 						"     postCommands: [],",
 						"     skipDuplicateMapInputs: true,",
-						"     skipDuplicateMapOutputs: true,",
-						"     partitionBy('hash', 1)) ~> WeeklySink",
+						"     skipDuplicateMapOutputs: true) ~> WeeklySink",
 						"SelectDailyColumns sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     partitionFileNames:['hospitalDaily'],",
-						"     umask: 0022,",
+						"     truncate: true,",
+						"     umask: 0000,",
 						"     preCommands: [],",
 						"     postCommands: [],",
 						"     skipDuplicateMapInputs: true,",
-						"     skipDuplicateMapOutputs: true,",
-						"     partitionBy('hash', 1)) ~> DailySink"
+						"     skipDuplicateMapOutputs: true) ~> DailySink"
 					]
 				}
 			},
