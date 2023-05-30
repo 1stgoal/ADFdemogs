@@ -1051,7 +1051,7 @@
 						"SelectWeeklyColumns sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     truncate: true,",
-						"     umask: 0002,",
+						"     umask: 0022,",
 						"     preCommands: [],",
 						"     postCommands: [],",
 						"     skipDuplicateMapInputs: true,",
