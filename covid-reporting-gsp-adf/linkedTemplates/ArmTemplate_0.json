@@ -326,7 +326,7 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "cases_deaths.csv",
-						"folderPath": "cases_deaths",
+						"folderPath": "ecdc/cases_deaths",
 						"fileSystem": "processed"
 					},
 					"columnDelimiter": ",",
