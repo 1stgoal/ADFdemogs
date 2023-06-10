@@ -115,7 +115,7 @@
 				"     skipDuplicateMapOutputs: true) ~> SelectForSink",
 				"SelectForSink sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     partitionFileNames:['processeddata'],",
+				"     partitionFileNames:['cases_deaths.csv'],",
 				"     truncate: true,",
 				"     umask: 0000,",
 				"     preCommands: [],",
