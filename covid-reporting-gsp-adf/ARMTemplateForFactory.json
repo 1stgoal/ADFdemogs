@@ -500,7 +500,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "processeddata",
+						"fileName": "cases_deaths.csv",
+						"folderPath": "cases_deaths",
 						"fileSystem": "processed"
 					},
 					"columnDelimiter": ",",
@@ -947,7 +948,7 @@
 						"     skipDuplicateMapOutputs: true) ~> SelectForSink",
 						"SelectForSink sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
-						"     partitionFileNames:['processeddata'],",
+						"     partitionFileNames:['cases_deaths.csv'],",
 						"     truncate: true,",
 						"     umask: 0000,",
 						"     preCommands: [],",
